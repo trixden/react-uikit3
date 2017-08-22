@@ -1,2 +1,4 @@
 node_modules/
 testing/bundle.js
+
+dist/
