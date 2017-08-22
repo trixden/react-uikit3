@@ -1,6 +1,6 @@
 # Available components
 
-- [Grid](#Grid)
+- [Grid](#grid)
 
 ## Grid
 [Official guide](https://getuikit.com/docs/grid)
