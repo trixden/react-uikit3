@@ -1,0 +1,34 @@
+{
+  "name": "react-uikit3",
+  "version": "0.0.2",
+  "description": "UIkit3 for react",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://karimovinfo@bitbucket.org/karimovinfo/react-uikit3.git"
+  },
+  "author": "Denis Karimov",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "uikit": "^3.0.0-beta.30"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-util": "^3.0.8",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "compile": "babel src --presets=es2015,react -d dist",
+    "prepublish": "npm run compile"
+  }
+}
