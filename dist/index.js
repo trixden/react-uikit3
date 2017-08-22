@@ -9,7 +9,7 @@ var _uikit = require('uikit/dist/js/uikit');
 
 var _uikit2 = _interopRequireDefault(_uikit);
 
-var _Grid = require('Grid');
+var _Grid = require('./Grid');
 
 var _Grid2 = _interopRequireDefault(_Grid);
 
