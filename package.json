@@ -1,11 +1,11 @@
 {
   "name": "react-uikit3",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "UIkit3 for react",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://karimovinfo@bitbucket.org/karimovinfo/react-uikit3.git"
+    "url": "https://karimovinfo@bitbucket.org/karimovinfo/react-uikit3.git"
   },
   "author": "Denis Karimov",
   "license": "ISC",
