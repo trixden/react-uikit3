@@ -7,8 +7,8 @@ const $ = require('gulp-load-plugins')();
 
 gulp.task('buildJS', () => {
   return browserify({
-    entries: './client/index.jsx',
-    extensions: ['.jsx'],
+    entries: './testing/index.jsx',
+    extensions: ['.jsx', '.js'],
     debug: false
   })
   .transform('babelify', {
@@ -22,7 +22,12 @@ gulp.task('buildJS', () => {
     this.emit('end');
   })
   .pipe(source('bundle.js'))
-  .pipe(gulp.dest('public/bundles'));
+  .pipe(gulp.dest('testing'));
 });
 
-gulp.task('start', ['buildJS']);
+gulp.task('start', ['buildJS'], () => {
+  gulp.watch([
+    'src/**/*.jsx',
+    'testing/**/*.jsx'
+  ], ['buildJS']);
+});
