@@ -3,8 +3,10 @@ import $ from 'jquery';
 import UIkit from 'uikit/dist/js/uikit';
 
 export default class Nav extends React.Component {
-  componentDidMount () {
-    UIkit.nav($(this.targetElement), {
+  static UIkitComponent;
+
+  componentDidMount() {
+    this.UIkitComponent = UIkit.nav($(this.targetElement), {
       targets: this.props.targets,
       toggle: this.props.toggle,
       content: this.props.content,
@@ -14,6 +16,14 @@ export default class Nav extends React.Component {
       animation: this.props.animation,
       duration: this.props.duration
     });
+  }
+
+  componentDidUpdate() {
+    this.UIkitComponent.$emit(event = 'update');
+  }
+
+  componentWillUnmount() {
+    this.UIkitComponent.$destroy();
   }
 
   render () {

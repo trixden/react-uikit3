@@ -3,8 +3,10 @@ import $ from 'jquery';
 import UIkit from 'uikit/dist/js/uikit';
 
 export default class NavBar extends React.Component {
-  componentDidMount () {
-    UIkit.navbar($(this.gridElement), {
+  static UIkitComponent;
+
+  componentDidMount() {
+    this.UIkitComponent = UIkit.navbar($(this.gridElement), {
       align: this.props.align,
       mode: this.props.mode,
       delayShow: this.props.delayShow,
@@ -16,6 +18,14 @@ export default class NavBar extends React.Component {
       dropbarMode: this.props.dropbarMode,
       duration: this.props.duration
     });
+  }
+
+  componentDidUpdate() {
+    this.UIkitComponent.$emit(event = 'update');
+  }
+
+  componentWillUnmount() {
+    this.UIkitComponent.$destroy();
   }
 
   render () {

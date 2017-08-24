@@ -3,11 +3,21 @@ import $ from 'jquery';
 import UIkit from 'uikit/dist/js/uikit';
 
 export default class Grid extends React.Component {
-  componentDidMount () {
-    UIkit.grid($(this.gridElement), {
+  static UIkitComponent;
+
+  componentDidMount() {
+    this.UIkitComponent = UIkit.grid($(this.gridElement), {
       firstColumn: this.props.firstColumn,
       margin: this.props.margin
     });
+  }
+
+  componentDidUpdate() {
+    this.UIkitComponent.$emit(event = 'update');
+  }
+
+  componentWillUnmount() {
+    this.UIkitComponent.$destroy();
   }
 
   render () {

@@ -3,8 +3,10 @@ import $ from 'jquery';
 import UIkit from 'uikit/dist/js/uikit';
 
 export default class Sticky extends React.Component {
+  static UIkitComponent;
+
   componentDidMount () {
-    UIkit.sticky($(this.gridElement), {
+    this.UIkitComponent = UIkit.sticky($(this.gridElement), {
       top: this.props.top,
       offset: this.props.offset,
       animation: this.props.animation,
@@ -15,6 +17,14 @@ export default class Sticky extends React.Component {
       media: this.props.media,
       target: this.props.target
     });
+  }
+
+  componentDidUpdate() {
+    this.UIkitComponent.$emit(event = 'update');
+  }
+
+  componentWillUnmount() {
+    this.UIkitComponent.$destroy();
   }
 
   render () {
