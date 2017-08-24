@@ -1,6 +1,6 @@
 {
   "name": "react-uikit3",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "UIkit3 for react",
   "main": "dist/index.js",
   "repository": {
@@ -34,7 +34,7 @@
   "scripts": {
     "compile": "gulp compile",
     "start": "npm run compile && http-server ./testing -o",
-    "prepublish": "npm run compile"
+    "prepublish": "babel src --presets=es2015,react -d dist"
   },
   "bugs": {
     "url": "https://bitbucket.org/karimovinfo/react-uikit3/issues"
