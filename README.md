@@ -21,11 +21,11 @@ React.render((
 ), element)
 ~~~
 
-Attribute   |  Type  | Required?
-------------|--------|---------
-className   | string | false
-firstColumn | string | false
-margin      | string | false
+Attribute     |  Type  | Required?
+--------------|--------|---------
+`className`   | string | false
+`firstColumn` | string | false
+`margin`      | string | false
 
 ## Sticky
 [Official guide](https://getuikit.com/docs/sticky)
@@ -42,14 +42,14 @@ React.render((
 ), element)
 ~~~
 
-Attribute           |  Type            | Required?
---------------------|------------------|---------
-className           | string           | false
-top                 | number, selector | false
-animation           | string, false    | false
-clsActive           | string           | false
-clsInactive         | string           | false
-widthElement        | selector         | false
-showOnUp            | boolean          | false
-media               | number           | false
-target              | boolean          | false
+Attribute             |  Type            | Required?
+----------------------|------------------|---------
+`className`           | string           | false
+`top`                 | number, selector | false
+`animation`           | string, false    | false
+`clsActive`           | string           | false
+`clsInactive`         | string           | false
+`widthElement`        | selector         | false
+`showOnUp`            | boolean          | false
+`media`               | number           | false
+`target`              | boolean          | false

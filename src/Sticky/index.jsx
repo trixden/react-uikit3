@@ -4,7 +4,6 @@ import UIkit from 'uikit/dist/js/uikit';
 
 export default class Sticky extends React.Component {
   componentDidMount () {
-    console.log('props', this.props);
     UIkit.sticky($(this.gridElement), {
       top: this.props.top,
       offset: this.props.offset,

@@ -1,6 +1,6 @@
 {
   "name": "react-uikit3",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "UIkit3 for react",
   "main": "dist/index.js",
   "repository": {
@@ -28,6 +28,7 @@
     "http-server": "0.10.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-router": "^3.x.x",
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
