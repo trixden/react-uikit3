@@ -2,19 +2,20 @@
 
 - [Grid](#grid)
 - [Sticky](#sticky)
+- [NavBar](#navbar)
 
 ## Grid
 [Official guide](https://getuikit.com/docs/grid)
 
-~~~javascript
+~~~js
 import {Grid} from 'react-uikit3';
 
 React.render((
   <Grid>
-    <div className={'uk-width-1-2'}>
+    <div className='uk-width-1-2'>
       Left column
     </div>
-    <div className={'uk-width-1-2'}>
+    <div className='uk-width-1-2'>
       Right column
     </div>
   </Grid>
@@ -30,7 +31,7 @@ Attribute     |  Type  | Required?
 ## Sticky
 [Official guide](https://getuikit.com/docs/sticky)
 
-~~~javascript
+~~~js
 import {Sticky} from 'react-uikit3';
 
 React.render((
@@ -53,3 +54,54 @@ Attribute             |  Type            | Required?
 `showOnUp`            | boolean          | false
 `media`               | number           | false
 `target`              | boolean          | false
+
+## NavBar
+[Official guide](https://getuikit.com/docs/navbar)
+
+~~~js
+import {NavBar} from 'react-uikit3';
+
+React.render((
+  <NavBar>
+    <div className='uk-navbar-left'>
+      <ul className='uk-navbar-nav'>
+        <li>
+          <Link to='/'>One</Link>
+        </li>
+        <li>
+          <Link to='/two'>Two</Link>
+        </li>
+        <li>
+          <Link to='/three'>Three</Link>
+          <div className='uk-navbar-dropdown'>
+            <ul className='uk-nav uk-navbar-dropdown-nav'>
+              <li>
+                <Link to='/sub-one'>Sub One</Link>
+              </li>
+              <li>
+                <Link to='/sub-two'>Sub Two</Link>
+              </li>
+              <li>
+                <Link to='/sub-three'>Sub Three</Link>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </NavBar>
+), element);
+~~~
+
+Attribute       |  Type    | Required?
+----------------|----------|---------
+`align`         | string   | false
+`mode`          | string   | false
+`delayShow`     | number   | false
+`delayHide`     | number   | false
+`boundary`      | selector | false
+`boundaryAlign` | boolean  | false
+`offset`        | number   | false
+`dropbar`       | boolean  | false
+`dropbarMode`   | string   | false
+`duration`      | number   | false
