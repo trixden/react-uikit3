@@ -2,6 +2,7 @@
 
 - [Grid](#grid)
 - [Sticky](#sticky)
+- [Nav](#nav)
 - [NavBar](#navbar)
 
 ## Grid
@@ -55,11 +56,45 @@ Attribute             |  Type            | Required?
 `media`               | number           | false
 `target`              | boolean          | false
 
+## Nav
+[Official guide](https://getuikit.com/docs/nav)
+
+~~~js
+import {Nav} from 'react-uikit3';
+import {Link} from 'react-router';
+
+React.render((
+  <Nav className='uk-nav-default uk-nav-parent-icon'>
+    <li>
+      <Link to='/'>One</Link>
+    </li>
+    <li>
+      <Link to='/two'>Two</Link>
+    </li>
+    <li className='uk-parent'>
+      <a>Three</a>
+      <ul className='uk-nav-sub'>
+        <li>
+          <Link to='/sub-one'>Sub One</Link>
+        </li>
+        <li>
+          <Link to='/sub-two'>Sub Two</Link>
+        </li>
+        <li>
+          <Link to='/sub-three'>Sub Three</Link>
+        </li>
+      </ul>
+    </li>
+  </Nav>
+), element);
+~~~
+
 ## NavBar
 [Official guide](https://getuikit.com/docs/navbar)
 
 ~~~js
 import {NavBar} from 'react-uikit3';
+import {Link} from 'react-router';
 
 React.render((
   <NavBar>

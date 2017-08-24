@@ -1,7 +1,7 @@
 import React from 'react';
 import {Router, Route, IndexRoute, browserHistory, Link} from 'react-router';
 import ReactDOM from 'react-dom';
-import {Grid, Sticky, NavBar, NavItem} from '../src';
+import {Grid, Sticky, Nav, NavBar} from '../src';
 
 class Html extends React.Component {
   render () {
@@ -43,18 +43,29 @@ class Html extends React.Component {
             </div>
           </NavBar>
         </Sticky>
-        <h1>
-          BEGIN
-        </h1>
-        <Grid firstColumn={'test'} margin={'test-margin'}>
-          <div id={'selector'} className={'uk-width-1-2'}>
-            Grid column left
+        <Grid>
+          <div className={'uk-width-1-4'}>
+            <Nav className='uk-nav-default uk-nav-parent-icon'>
+              <li>
+                <Link to='/'>One</Link>
+              </li>
+              <li className='uk-parent'>
+                <Link to='/two'>Two</Link>
+                <ul className='uk-nav-sub'>
+                  <li><a>Sub One</a></li>
+                  <li><a>Sub Two</a></li>
+                  <li><a>Sub Three</a></li>
+                </ul>
+              </li>
+              <li>
+                <Link to='/three'>Three</Link>
+              </li>
+            </Nav>
           </div>
-          <div className={'uk-width-1-2'}>
-            Grid clumn right
-          </div>
-          <div className={'uk-width-1-2'}>
-            Anither grid column
+          <div className={'uk-width-3-4'}>
+            <h1>
+              React UIkit3 Demo
+            </h1>
           </div>
         </Grid>
       </div>
