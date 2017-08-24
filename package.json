@@ -1,6 +1,6 @@
 {
   "name": "react-uikit3",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "UIkit3 for react",
   "main": "dist/index.js",
   "repository": {
@@ -22,14 +22,17 @@
     "babelify": "^7.3.0",
     "browserify": "^14.4.0",
     "gulp": "^3.9.1",
+    "gulp-concat": "2.6.1",
     "gulp-load-plugins": "^1.5.0",
     "gulp-util": "^3.0.8",
+    "http-server": "0.10.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
-    "compile": "babel src --presets=es2015,react -d dist",
+    "compile": "gulp compile",
+    "start": "npm run compile && http-server ./testing -o",
     "prepublish": "npm run compile"
   },
   "bugs": {

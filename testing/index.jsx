@@ -17,12 +17,15 @@ class Html extends React.Component {
             I'm a sticky element
           </h1>
         </Sticky>
-        <Grid>
+        <Grid firstColumn={'test'} margin={'test-margin'}>
           <div id={'selector'} className={'uk-width-1-2'}>
             Grid column left
           </div>
           <div className={'uk-width-1-2'}>
             Grid clumn right
+          </div>
+          <div className={'uk-width-1-2'}>
+            Anither grid column
           </div>
         </Grid>
       </div>

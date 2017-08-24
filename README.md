@@ -21,9 +21,11 @@ React.render((
 ), element)
 ~~~
 
-Attribute |  Type  | Required?
-----------|--------|---------
-className | string | false
+Attribute   |  Type  | Required?
+------------|--------|---------
+className   | string | false
+firstColumn | string | false
+margin      | string | false
 
 ## Sticky
 [Official guide](https://getuikit.com/docs/sticky)

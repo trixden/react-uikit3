@@ -4,7 +4,10 @@ import UIkit from 'uikit/dist/js/uikit';
 
 export default class Grid extends React.Component {
   componentDidMount () {
-    UIkit.grid($(this.gridElement), {});
+    UIkit.grid($(this.gridElement), {
+      firstColumn: this.props.firstColumn,
+      margin: this.props.margin
+    });
   }
 
   render () {
