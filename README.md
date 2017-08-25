@@ -1,9 +1,53 @@
 # Available components
 
+- [Accordion](#accordion)
 - [Grid](#grid)
 - [Sticky](#sticky)
 - [Nav](#nav)
 - [NavBar](#navbar)
+
+## Accordion
+[Official guide](https://getuikit.com/docs/accordion)
+
+~~~js
+<Accordion>
+  <li>
+    <h3 className='uk-accordion-title'>
+      Accordion title 1
+    </h3>
+    <div className='uk-accordion-content'>
+      Accordion Text 1
+    </div>
+  </li>
+  <li>
+    <h3 className='uk-accordion-title'>
+      Accordion title 2
+    </h3>
+    <div className='uk-accordion-content'>
+      Accordion Text 2
+    </div>
+  </li>
+  <li>
+    <h3 className='uk-accordion-title'>
+      Accordion title 3
+    </h3>
+    <div className='uk-accordion-content'>
+      Accordion Text 3
+    </div>
+  </li>
+</Accordion>
+~~~
+
+Attribute     |  Type   | Required?
+--------------|---------|---------
+`className`   | string  | false
+`targets`     | string  | false
+`active`      | number  | false
+`collapsible` | boolean | false
+`multiple`    | boolean | false
+`animation`   | boolean | false
+`transition`  | string  | false
+`duration`    | number  | false
 
 ## Grid
 [Official guide](https://getuikit.com/docs/grid)
