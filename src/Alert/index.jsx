@@ -2,18 +2,14 @@ import React from 'react';
 import $ from 'jquery';
 import UIkit from 'uikit';
 
-export default class Accordion extends React.Component {
+export default class Alert extends React.Component {
   static UIkitComponent;
 
   componentDidMount() {
-    this.UIkitComponent = UIkit.accordion($(this.gridElement), {
-      targets: this.props.targets,
-      active: this.props.active,
-      collapsible: this.props.collapsible,
-      multiple: this.props.multiple,
+    this.UIkitComponent = UIkit.alert($(this.gridElement), {
       animation: this.props.animation,
-      transition: this.props.transition,
-      duration: this.props.duration
+      duration: this.props.duration,
+      selClose: this.props.selClose
     });
   }
 
@@ -27,12 +23,12 @@ export default class Accordion extends React.Component {
 
   render () {
     return (
-      <ul
+      <div
         className={this.props.className}
         ref={(element) => {this.gridElement = element;}}
       >
         {this.props.children}
-      </ul>
+      </div>
     );
   }
 }

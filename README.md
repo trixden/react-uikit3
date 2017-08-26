@@ -39,7 +39,7 @@ React.render((
       </div>
     </li>
   </Accordion>
-));
+), element);
 ~~~
 
 Attribute     |  Type   | Required?
@@ -52,6 +52,27 @@ Attribute     |  Type   | Required?
 `animation`   | boolean | false
 `transition`  | string  | false
 `duration`    | number  | false
+
+## Alert
+[Official guide](https://getuikit.com/docs/alert)
+
+~~~js
+import {Alert} from 'react-uikit3';
+
+React.render((
+  <Alert className='uk-alert-success'>
+    Alert successfull!
+    <a className='uk-alert-close'>Close</a>
+  </Alert>
+), element);
+~~~
+
+Attribute             |  Type            | Required?
+----------------------|------------------|---------
+`className`           | string           | false
+`animation`           | boolean, string  | false
+`duration`            | number           | false
+`selClose`            | selector         | false
 
 ## Grid
 [Official guide](https://getuikit.com/docs/grid)
@@ -68,7 +89,7 @@ React.render((
       Right column
     </div>
   </Grid>
-), element)
+), element);
 ~~~
 
 Attribute     |  Type  | Required?
@@ -89,7 +110,7 @@ React.render((
       I am a sticky
     </h1>
   </Sticky>
-), element)
+), element);
 ~~~
 
 Attribute             |  Type            | Required?

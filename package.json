@@ -32,9 +32,9 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
-    "compile": "gulp compile",
-    "start": "npm run compile && http-server ./testing -o",
-    "prepublish": "babel src --presets=es2015,react -d dist"
+    "compile": "babel src --presets=es2015,react -d dist",
+    "start": "gulp compile && http-server ./testing -o",
+    "prepublish": "npm run compile"
   },
   "bugs": {
     "url": "https://bitbucket.org/karimovinfo/react-uikit3/issues"

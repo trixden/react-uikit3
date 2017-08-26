@@ -1,6 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
-import UIkit from 'uikit/dist/js/uikit';
+import UIkit from 'uikit';
 
 export default class Sticky extends React.Component {
   static UIkitComponent;

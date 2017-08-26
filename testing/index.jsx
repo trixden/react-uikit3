@@ -1,14 +1,14 @@
 import React from 'react';
 import {Router, Route, IndexRoute, browserHistory, Link} from 'react-router';
 import ReactDOM from 'react-dom';
-import {Accordion, Grid, Sticky, Nav, NavBar} from '../src';
+import {Accordion, Alert, Icon, Grid, Sticky, Nav, NavBar} from '../src';
 
 class Html extends React.Component {
   render () {
     return (
       <div style={{minHeight: '300vh'}}>
         <Sticky showOnUp={true} animation={'uk-animation-slide-top'}>
-          <NavBar dropbar={true} className={'uk-navbar-container'}>
+          <NavBar className={'uk-navbar-container'}>
             <div className={'uk-navbar-left'}>
               <ul className={'uk-navbar-nav'}>
                 <li>
@@ -62,39 +62,49 @@ class Html extends React.Component {
               </li>
             </Nav>
           </div>
-          <div className={'uk-width-3-4'}>
-            <h1>
-              React UIkit3 Demo
-            </h1>
-            <h2>
-              Accordion
-            </h2>
-            <Accordion collapsible={false}>
-              <li>
-                <h3 className='uk-accordion-title'>
-                  Accordion title 1
-                </h3>
-                <div className='uk-accordion-content'>
-                  Accordion Text 1
-                </div>
-              </li>
-              <li>
-                <h3 className='uk-accordion-title'>
-                  Accordion title 2
-                </h3>
-                <div className='uk-accordion-content'>
-                  Accordion Text 2
-                </div>
-              </li>
-              <li>
-                <h3 className='uk-accordion-title'>
-                  Accordion title 3
-                </h3>
-                <div className='uk-accordion-content'>
-                  Accordion Text 3
-                </div>
-              </li>
-            </Accordion>
+          <div className='uk-width-3-4'>
+            <div className='uk-container'>
+              <h1>
+                React UIkit3 Demo
+              </h1>
+              <h2>
+                Accordion
+              </h2>
+              <Accordion collapsible={false}>
+                <li>
+                  <h3 className='uk-accordion-title'>
+                    Accordion title 1
+                  </h3>
+                  <div className='uk-accordion-content'>
+                    Accordion Text 1
+                  </div>
+                </li>
+                <li>
+                  <h3 className='uk-accordion-title'>
+                    Accordion title 2
+                  </h3>
+                  <div className='uk-accordion-content'>
+                    Accordion Text 2
+                  </div>
+                </li>
+                <li>
+                  <h3 className='uk-accordion-title'>
+                    Accordion title 3
+                  </h3>
+                  <div className='uk-accordion-content'>
+                    Accordion Text 3
+                  </div>
+                </li>
+              </Accordion>
+              <h2>
+                Alert
+              </h2>
+              <Alert className='uk-alert-success'>
+                <a className='uk-alert-close'>close</a>
+                <Icon icon='check' className='uk-icon-button' />
+                Alert successfull
+              </Alert>
+            </div>
           </div>
         </Grid>
       </div>
