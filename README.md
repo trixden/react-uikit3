@@ -1,6 +1,7 @@
 # Available components
 
 - [Accordion](#accordion)
+- [Alert](#alert)
 - [Grid](#grid)
 - [Sticky](#sticky)
 - [Nav](#nav)
