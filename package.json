@@ -1,6 +1,6 @@
 {
   "name": "react-uikit3",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "UIkit3 for react",
   "main": "dist/index.js",
   "repository": {

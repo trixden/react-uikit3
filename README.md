@@ -83,16 +83,18 @@ Attribute             |  Type            | Required?
 import {Cover} from 'react-uikit3';
 
 React.render((
-  <div class="uk-cover-container uk-height-medium">
-    <Cover type='image' src='/path/to/image.jpg' />
-  </div>
-  <div class="uk-cover-container uk-height-medium">
-    <Cover type='iframe' src='/path/to/frame' />
-  </div>
-  <div class="uk-cover-container uk-height-medium">
-    <Cover type='video'>
-      <source src="/path/to/video.mp4" type="video/mp4">
-    </Cover>
+  <div>
+    <div class="uk-cover-container uk-height-medium">
+      <Cover type='image' src='/path/to/image.jpg' />
+    </div>
+    <div class="uk-cover-container uk-height-medium">
+      <Cover type='iframe' src='/path/to/frame' />
+    </div>
+    <div class="uk-cover-container uk-height-medium">
+      <Cover type='video'>
+        <source src="/path/to/video.mp4" type="video/mp4">
+      </Cover>
+    </div>
   </div>
 ), element);
 ~~~
