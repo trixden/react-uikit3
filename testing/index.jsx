@@ -1,7 +1,7 @@
 import React from 'react';
 import {Router, Route, IndexRoute, browserHistory, Link} from 'react-router';
 import ReactDOM from 'react-dom';
-import {Accordion, Alert, Icon, Grid, Sticky, Nav, NavBar} from '../src';
+import {Accordion, Alert, Cover, Icon, Grid, Sticky, Nav, NavBar} from '../src';
 
 class Html extends React.Component {
   render () {
@@ -64,6 +64,9 @@ class Html extends React.Component {
           </div>
           <div className='uk-width-3-4'>
             <div className='uk-container'>
+              <div className='uk-cover-container uk-height-medium'>
+                <Cover type='image' src='http://lorempixel.com/1920/550/' />
+              </div>
               <h1>
                 React UIkit3 Demo
               </h1>

@@ -2,6 +2,7 @@
 
 - [Accordion](#accordion)
 - [Alert](#alert)
+- [Cover](#cover)
 - [Grid](#grid)
 - [Sticky](#sticky)
 - [Nav](#nav)
@@ -74,6 +75,36 @@ Attribute             |  Type            | Required?
 `animation`           | boolean, string  | false
 `duration`            | number           | false
 `selClose`            | selector         | false
+
+## Cover
+[Official guide](https://getuikit.com/docs/cover)
+
+~~~js
+import {Cover} from 'react-uikit3';
+
+React.render((
+  <div class="uk-cover-container uk-height-medium">
+    <Cover type='image' src='/path/to/image.jpg' />
+  </div>
+  <div class="uk-cover-container uk-height-medium">
+    <Cover type='iframe' src='/path/to/frame' />
+  </div>
+  <div class="uk-cover-container uk-height-medium">
+    <Cover type='video'>
+      <source src="/path/to/video.mp4" type="video/mp4">
+    </Cover>
+  </div>
+), element);
+~~~
+
+Attribute             |  Type            | Required?
+----------------------|------------------|---------
+`className`           | string           | false
+`type`                | string: (`image`, `iframe` or `video`)  | **true**
+`src`            | string           | **true** (for `image` or `iframe`)
+`automute`            | boolean         | false
+`width`            | number         | false
+`height`            | number         | false
 
 ## Grid
 [Official guide](https://getuikit.com/docs/grid)

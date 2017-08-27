@@ -2,6 +2,7 @@ import $ from 'jquery';
 import UIkit from 'uikit';
 import Accordion from './Accordion';
 import Alert from './Alert';
+import Cover from './Cover';
 import Icon from './Icon';
 import Grid from './Grid';
 import Sticky from './Sticky';
@@ -11,6 +12,7 @@ import NavBar from './NavBar';
 export {
   Accordion,
   Alert,
+  Cover,
   Icon,
   Grid,
   Sticky,
