@@ -26,12 +26,16 @@ export default class Cover extends React.Component {
         <img
           ref={(element) => {this.gridElement = element;}}
           src={this.props.src}
+          width={this.props.width}
+          height={this.props.height}
           className={this.props.className}
         />
       ) : this.props.type === 'iframe' ? (
         <iframe
           ref={(element) => {this.gridElement = element;}}
           src={this.props.src}
+          width={this.props.width}
+          height={this.props.height}
           className={this.props.className}
         >
         </iframe>
