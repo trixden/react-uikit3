@@ -172,7 +172,7 @@ React.render((
     <Lightbox.Item href='/path/to/image.jpg' caption='Image'>
       Open Image
     </Lightbox.Item>
-    <Lightbox.Item href='/path/to/video.jpg' caption='Video'>
+    <Lightbox.Item href='/path/to/video.mp4' caption='Video'>
       Open Video
     </Lightbox.Item>
   </Lightbox>
