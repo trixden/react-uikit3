@@ -5,10 +5,12 @@
 - [Cover](#cover)
 - [Grid](#grid)
 - [Sticky](#sticky)
+- [Lightbox](#lightbox)
 - [Nav](#nav)
 - [NavBar](#navbar)
 
 ## Accordion
+
 [Official guide](https://getuikit.com/docs/accordion)
 
 ~~~js
@@ -158,6 +160,38 @@ Attribute             |  Type            | Required?
 `showOnUp`            | boolean          | false
 `media`               | number           | false
 `target`              | boolean          | false
+
+## Lightbox
+[Official guide](https://getuikit.com/docs/lightbox)
+
+~~~js
+import {Lightbox} from 'react-uikit3';
+
+React.render((
+  <Lightbox>
+    <Lightbox.Item href='/path/to/image.jpg' caption='Image'>
+      Open Image
+    </Lightbox.Item>
+    <Lightbox.Item href='/path/to/video.jpg' caption='Video'>
+      Open Video
+    </Lightbox.Item>
+  </Lightbox>
+), element);
+~~~
+
+#### Lightbox attributes
+Attribute             |  Type            | Required?
+----------------------|------------------|---------
+`className`           | string           | false
+`toggle`              | selector         | false
+`animation`           | string, false    | false
+
+#### Lightbox.Item attributes
+Attribute             |  Type            | Required?
+----------------------|------------------|---------
+`className`           | string           | false
+`href`                | string           | **true**
+`caption`             | string           | false
 
 ## Nav
 [Official guide](https://getuikit.com/docs/nav)

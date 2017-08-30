@@ -1,7 +1,7 @@
 import React from 'react';
 import {Router, Route, IndexRoute, browserHistory, Link} from 'react-router';
 import ReactDOM from 'react-dom';
-import {Accordion, Alert, Cover, Icon, Grid, Sticky, Nav, NavBar} from '../src';
+import {Accordion, Alert, Cover, Icon, Grid, Sticky, Lightbox, Nav, NavBar} from '../src';
 
 class Html extends React.Component {
   render () {
@@ -107,6 +107,33 @@ class Html extends React.Component {
                 <Icon icon='check' className='uk-icon-button' />
                 Alert successfull
               </Alert>
+              <h2>
+                Lightbox
+              </h2>
+              <Lightbox>
+                <Grid>
+                  <div className='uk-width-1-2'>
+                    <Lightbox.Item href='http://lorempixel.com/400/200/' caption='Lightbox 1'>
+                      Lightbox 1
+                    </Lightbox.Item>
+                  </div>
+                  <div className='uk-width-1-2'>
+                    <Lightbox.Item href='http://lorempixel.com/400/200/' caption='Lightbox 2'>
+                      Lightbox 2
+                    </Lightbox.Item>
+                  </div>
+                  <div className='uk-width-1-2'>
+                    <Lightbox.Item href='http://lorempixel.com/400/200/' caption='Lightbox 3'>
+                      Lightbox 3
+                    </Lightbox.Item>
+                  </div>
+                  <div className='uk-width-1-2'>
+                    <Lightbox.Item href="//www.youtube.com/watch?v=YE7VzlLtp-4">
+                      Video
+                    </Lightbox.Item>
+                  </div>
+                </Grid>
+              </Lightbox>
             </div>
           </div>
         </Grid>
