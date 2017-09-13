@@ -134,6 +134,10 @@ class Html extends React.Component {
                   </div>
                 </Grid>
               </Lightbox>
+              <h2>
+                Modal
+              </h2>
+              
             </div>
           </div>
         </Grid>
