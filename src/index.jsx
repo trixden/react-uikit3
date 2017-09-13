@@ -9,6 +9,7 @@ import Lightbox, {Item} from './Lightbox';
 import Nav from './Nav';
 import NavBar from './NavBar';
 import Dropdown from './Dropdown';
+import Drop from './Drop';
 
 exports.Accordion = Accordion;
 exports.Alert = Alert;
@@ -20,5 +21,6 @@ exports.Lightbox.Item = Item;
 exports.Nav = Nav;
 exports.NavBar = NavBar;
 exports.Dropdown = Dropdown;
+exports.Drop = Drop;
 
 export default UIkit;
