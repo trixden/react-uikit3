@@ -2,8 +2,11 @@
 
 - [Accordion](#accordion)
 - [Alert](#alert)
+- [Countdown](#countdown)
 - [Cover](#cover)
 - [Grid](#grid)
+- [Drop](#drop)
+- [Dropdown](#dropdown)
 - [Sticky](#sticky)
 - [Lightbox](#lightbox)
 - [Nav](#nav)
@@ -78,6 +81,30 @@ Attribute             |  Type            | Required?
 `duration`            | number           | false
 `selClose`            | selector         | false
 
+## Countdown
+[Official guide](https://getuikit.com/docs/countdown)
+
+~~~js
+import {Countdown} from 'react-uikit3';
+
+React.render((
+  <Countdown date={date}>
+    <div>
+      <div className="uk-countdown-number uk-countdown-days"></div>
+    </div>
+    <div>
+      <div className="uk-countdown-number uk-countdown-hours"></div>
+    </div>
+    <div>
+      <div className="uk-countdown-number uk-countdown-minutes"></div>
+    </div>
+    <div>
+      <div className="uk-countdown-number uk-countdown-seconds"></div>
+    </div>
+  </Countdown>
+), element);
+~~~
+
 ## Cover
 [Official guide](https://getuikit.com/docs/cover)
 
@@ -133,6 +160,76 @@ Attribute     |  Type  | Required?
 `className`   | string | false
 `firstColumn` | string | false
 `margin`      | string | false
+
+## Drop
+[Official guide](https://getuikit.com/docs/drop)
+
+~~~js
+import {Drop} from 'react-uikit3'
+React.render((
+  <div className="uk-inline">
+    <button className="uk-button">
+      Show drop
+    </button>
+    <Drop>
+      <div className="uk-card uk-card-body uk-card-default">
+        Drop
+      </div>
+    </Drop>
+  </div>
+), element)
+~~~
+
+Attribute             |  Type            | Required?
+----------------------|------------------|---------
+`className`           | string           | false
+`toggle`              | boolean, selector | false
+`pos`                 | string           | false
+`mode`                | string           | false
+`delayShow`           | number           | false
+`delayHide`           | number           | false
+`boundary`            | string           | false
+`boundaryAlign`       | boolean          | false
+`flip`                | boolean, string  | false
+`offset`              | number           | false
+`animation`           | string           | false
+`duration`            | number           | false
+
+## Dropdown
+[Official guide](https://getuikit.com/docs/dropdown)
+
+~~~js
+import {Dropdown} from 'react-uikit3'
+React.render((
+  <div className="uk-inline">
+    <button className="uk-button">
+      Show dropdown
+    </button>
+    <Dropdown>
+      <ul className="uk-nav uk-dropdown-nav">
+          <li className="uk-active"><a>One</a></li>
+          <li><a>Two</a></li>
+          <li className="uk-nav-header">Three</li>
+      </ul>
+    </Dropdown>
+  </div>
+), element)
+~~~
+
+Attribute             |  Type            | Required?
+----------------------|------------------|---------
+`className`           | string           | false
+`toggle`              | boolean, selector | false
+`pos`                 | string           | false
+`mode`                | string           | false
+`delayShow`           | number           | false
+`delayHide`           | number           | false
+`boundary`            | string           | false
+`boundaryAlign`       | boolean          | false
+`flip`                | boolean, string  | false
+`offset`              | number           | false
+`animation`           | string           | false
+`duration`            | number           | false
 
 ## Sticky
 [Official guide](https://getuikit.com/docs/sticky)
