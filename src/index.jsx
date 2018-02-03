@@ -11,6 +11,7 @@ import NavBar from './NavBar';
 import Dropdown from './Dropdown';
 import Drop from './Drop';
 import Countdown from './Countdown';
+import Icon from './Icon';
 import Spinner from './Spinner';
 
 exports.Accordion = Accordion;
@@ -25,6 +26,7 @@ exports.NavBar = NavBar;
 exports.Dropdown = Dropdown;
 exports.Drop = Drop;
 exports.Countdown = Countdown;
+exports.Icon = Icon;
 exports.Spinner = Spinner;
 
 
