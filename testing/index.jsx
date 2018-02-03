@@ -1,7 +1,7 @@
 import React from 'react';
 import {Router, Route, IndexRoute, browserHistory, Link} from 'react-router';
 import ReactDOM from 'react-dom';
-import {Accordion, Alert, Cover, Grid, Sticky, Lightbox, Nav, NavBar, Spinner, Icon} from '../src';
+import {Accordion, Alert, Cover, Grid, Sticky, Lightbox, Nav, NavBar, Spinner, Icon, Slideshow} from '../src';
 
 class Html extends React.Component {
   render () {
@@ -138,6 +138,22 @@ class Html extends React.Component {
               </h2>
               <Spinner />
               <Icon icon="home" />
+              <h2>
+                Slideshow
+              </h2>
+              <Slideshow animation="slide" slidenav={true}>
+                <ul className="uk-slideshow-items">
+                  <li>
+                    <Cover type="image" src="http://lorempixel.com/400/200/" />
+                  </li>
+                  <li>
+                    <Cover type="image" src="http://lorempixel.com/400/200/" />
+                  </li>
+                  <li>
+                    <Cover type="image" src="http://lorempixel.com/400/200/" />
+                  </li>
+                </ul>
+              </Slideshow>
             </div>
           </div>
         </Grid>

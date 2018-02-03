@@ -13,6 +13,7 @@ import Drop from './Drop';
 import Countdown from './Countdown';
 import Icon from './Icon';
 import Spinner from './Spinner';
+import Slideshow from './Slideshow';
 
 exports.Accordion = Accordion;
 exports.Alert = Alert;
@@ -28,6 +29,7 @@ exports.Drop = Drop;
 exports.Countdown = Countdown;
 exports.Icon = Icon;
 exports.Spinner = Spinner;
+exports.Slideshow = Slideshow;
 
 
 export default UIkit;

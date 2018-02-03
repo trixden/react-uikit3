@@ -22,9 +22,7 @@ export default class NavBar extends React.Component {
       <span
         className={this.props.className}
         ref={(element) => {this.gridElement = element;}}
-      >
-        {this.props.children}
-      </span>
+      ></span>
     );
   }
 }
