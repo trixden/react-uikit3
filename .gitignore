@@ -1,4 +1,5 @@
+.idea/
 node_modules/
-testing/bundle.js
-testing/bundle.css
+/testing/bundle.js
+/testing/bundle.css
 dist/

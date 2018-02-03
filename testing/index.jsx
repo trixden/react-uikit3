@@ -1,7 +1,7 @@
 import React from 'react';
 import {Router, Route, IndexRoute, browserHistory, Link} from 'react-router';
 import ReactDOM from 'react-dom';
-import {Accordion, Alert, Cover, Icon, Grid, Sticky, Lightbox, Nav, NavBar} from '../src';
+import {Accordion, Alert, Cover, Grid, Sticky, Lightbox, Nav, NavBar, Spinner, Icon} from '../src';
 
 class Html extends React.Component {
   render () {
@@ -104,7 +104,6 @@ class Html extends React.Component {
               </h2>
               <Alert className='uk-alert-success'>
                 <a className='uk-alert-close'>close</a>
-                <Icon icon='check' className='uk-icon-button' />
                 Alert successfull
               </Alert>
               <h2>
@@ -135,9 +134,10 @@ class Html extends React.Component {
                 </Grid>
               </Lightbox>
               <h2>
-                Modal
+                Spinner
               </h2>
-              
+              <Spinner />
+              <Icon icon="home" />
             </div>
           </div>
         </Grid>

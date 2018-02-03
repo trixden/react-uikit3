@@ -11,6 +11,7 @@ import NavBar from './NavBar';
 import Dropdown from './Dropdown';
 import Drop from './Drop';
 import Countdown from './Countdown';
+import Spinner from './Spinner';
 
 exports.Accordion = Accordion;
 exports.Alert = Alert;
@@ -24,6 +25,7 @@ exports.NavBar = NavBar;
 exports.Dropdown = Dropdown;
 exports.Drop = Drop;
 exports.Countdown = Countdown;
+exports.Spinner = Spinner;
 
 
 export default UIkit;
