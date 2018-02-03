@@ -11,6 +11,9 @@
 - [Lightbox](#lightbox)
 - [Nav](#nav)
 - [NavBar](#navbar)
+- [Slideshow](#slideshow)
+- [Icon](#icon)
+- [Spinner](#spinner)
 
 ## Accordion
 
@@ -374,3 +377,67 @@ Attribute       |  Type    | Required?
 `dropbar`       | boolean  | false
 `dropbarMode`   | string   | false
 `duration`      | number   | false
+
+## Slideshow
+[Official guide](https://getuikit.com/docs/slideshow)
+
+~~~js
+import {Slideshow, Cover} from 'react-uikit3';
+
+React.render((
+  <Slideshow slidenav={true}>
+    <ul className="uk-slideshow-items">
+      <li>
+        <Cover type="image" src="/path/to/image.jpg" />
+      </li>
+      <li>
+        <Cover type="image" src="/path/to/image.jpg" />
+      </li>
+      <li>
+        <Cover type="image" src="/path/to/image.jpg" />
+      </li>
+    </ul>
+  </Slideshow>
+), element);
+~~~
+
+Attribute       |  Type    | Required?
+----------------|----------|---------
+`animation`         | string   | false
+`autoplay`          | boolean  | false
+`autoplayInterval`  | number   | false
+`finite`            | boolean  | false
+`pauseOnHover`      | boolean  | false
+`index`             | number   | false
+`velocity`          | number   | false
+`ratio`             | boolean, string  | false
+`minHeight`         | number   | false
+`maxHeight`         | number   | false
+`slidenav`          | boolean  | false
+
+## Icon
+[Official guide](https://getuikit.com/docs/icon)
+
+~~~js
+import {Icon} from 'react-uikit3';
+
+React.render((
+  <Icon icon="home" />
+), element);
+~~~
+
+Attribute       |  Type    | Required?
+----------------|----------|---------
+`icon`         | string   | false
+`ratio`          | number  | false
+
+## Spinner
+[Official guide](https://getuikit.com/docs/spinner)
+
+~~~js
+import {Spinner} from 'react-uikit3';
+
+React.render((
+  <Spinner />
+), element);
+~~~
