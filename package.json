@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.2.1",
-    "uikit": "^3.0.0-beta.30"
+    "uikit": "^3.0.0-beta.39"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
