@@ -1,3 +1,9 @@
+# Installation
+
+~~~
+npm install --save react-uikit3
+~~~
+
 # Available components
 
 - [Accordion](#accordion)
