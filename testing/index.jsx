@@ -112,16 +112,16 @@ class Html extends React.Component {
               <Lightbox>
                 <Grid>
                   <div className='uk-width-1-2'>
-                    <Lightbox.Item href='http://lorempixel.com/400/200/' caption='Lightbox 1'>
-                      Lightbox 1
+                    <Lightbox.Item href='http://karimov.info/uploads/portfolio/avatars/gamefanat_01.jpg' caption='Lightbox 1'>
+                      <img src="http://karimov.info/uploads/portfolio/avatars/gamefanat_01.jpg.400x400_q85_crop.jpg" />
                     </Lightbox.Item>
                   </div>
                   <div className='uk-width-1-2'>
-                    <Lightbox.Item href='http://lorempixel.com/400/200/' caption='Lightbox 2'>
-                      Lightbox 2
+                    <Lightbox.Item href='http://karimov.info/uploads/portfolio/avatars/001.jpg' caption='Lightbox 2'>
+                      <img src="http://karimov.info/uploads/portfolio/avatars/001.jpg.400x400_q85_crop.jpg" />
                     </Lightbox.Item>
                   </div>
-                  <div className='uk-width-1-2'>
+                  {/* <div className='uk-width-1-2'>
                     <Lightbox.Item href='http://lorempixel.com/400/200/' caption='Lightbox 3'>
                       Lightbox 3
                     </Lightbox.Item>
@@ -130,7 +130,7 @@ class Html extends React.Component {
                     <Lightbox.Item href="//www.youtube.com/watch?v=YE7VzlLtp-4">
                       Video
                     </Lightbox.Item>
-                  </div>
+                  </div> */}
                 </Grid>
               </Lightbox>
               <h2>
@@ -138,6 +138,7 @@ class Html extends React.Component {
               </h2>
               <Spinner />
               <Icon icon="home" />
+              <Icon icon="code" />
               <h2>
                 Slideshow
               </h2>
